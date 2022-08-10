@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(226, 43%, 10%);
+}
+.container{
+    width: 900px;
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    color: #fff;
+}
+
+.card-first{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    row-gap: 20px;
+    height: 100%;
+    background-color: hwb(236 11% 71%);
+    border-radius: 20px;
+}
+.top-person{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 20px;
+    height: 300px;
+    padding: 20px;
+}
+.top-person img{
+    height: 70px;
+    width: 70px;
+    border: 3px solid #fff;
+    border-radius: 35px;
+    margin-bottom: 20px;
+}
+.card-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+.name {
+    font-size: 40px;
+    font-weight: 300;
+}
+.previous {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(235, 45%, 61%);
+}
+.date:hover {
+    color: hsl(236, 100%, 87%);
+}
+.date{
+    cursor: pointer;
+}
+.container-card{
+    display: none;
+}
+.card{
+    padding-top: 40px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 65px;
+    background-position-y: -5px;
+    background-position-x: 120px;
+}
+
+.card-detail{
+    background-color: hsl(235, 46%, 20%); 
+    border-radius: 15px;
+    height: 100%;
+    padding: 20px;
+}
+.title-card{
+    font-size: 18px;
+    font-weight: 400;
+}
+.time{
+    font-size: 55px;
+    margin-top: 25px;
+    font-weight: 300;
+}
